@@ -1215,8 +1215,3 @@ async def on_command_error(ctx, error):
         await ctx.send(embed=create_embed("❌ Hata", "Geçersiz argüman!", 0xFF0000))
 # ================= BOT TOKENİM ==========
 bot.run(MTQ4ODg5MDA1OTY4Mjg3NzYxMg.GmjnS1.ObYP0YlscmGeEF03700fhq8e-XciKdJb03gKis)
-
-
-
-
-check.Line 1217
