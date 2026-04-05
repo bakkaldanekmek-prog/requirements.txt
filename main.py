@@ -1213,11 +1213,7 @@ async def on_command_error(ctx, error):
         await ctx.send(embed=create_embed("❌ Hata", f"Eksik argüman: {error.param}", 0xFF0000))
     elif isinstance(error, commands.BadArgument):
         await ctx.send(embed=create_embed("❌ Hata", "Geçersiz argüman!", 0xFF0000))
-    else:
-        print(f"Hata: {error}")
-
-# ====================== BOT BAŞLAT ======================
-try:
+  try:
     with open("token.txt", "r") as f:
         token = f.read().strip()
 except:
