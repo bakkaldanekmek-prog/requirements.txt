@@ -6,25 +6,6 @@ import random
 import json
 import os
 from datetime import datetime, timedelta
-from flask import Flask
-from threading import Thread
-
-# ====================== KEEP ALIVE ======================
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return "Vexis Bot 7/24 Aktif ✅"
-
-def run():
-    app.run(host='0.0.0.0', port=5000)
-
-def keep_alive():
-    t = Thread(target=run)
-    t.daemon = True
-    t.start()
-
-keep_alive()
 
 # ====================== BOT ======================
 intents = discord.Intents.all()
