@@ -508,7 +508,7 @@ async def istatistik(ctx, member: discord.Member = None):
 async def mesajtop(ctx):
     top = sorted(data["mesaj_sayisi"].items(), key=lambda x: x[1], reverse=True)[:10]
     txt = "\n".join([f"`{i+1}.` <@{uid}> → **{count}** mesaj" for i, (uid, count) in enumerate(top)])
-    await ctx.send(embed=create_embed("🏆 Mesaj Sıralaması", txt or "Henüz veri yok",Tamam! İşte `.yapayzeka` komutunun silinmiş, tam güncellenmiş `main.py` kodu:
+    await ctx.send(embed=create_embed("🏆 Mesaj Sıralaması", txt or "Henüz veri yok"
 
 import discord
 from discord.ext import commands
