@@ -1213,10 +1213,10 @@ async def on_command_error(ctx, error):
         await ctx.send(embed=create_embed("❌ Hata", f"Eksik argüman: {error.param}", 0xFF0000))
     elif isinstance(error, commands.BadArgument):
         await ctx.send(embed=create_embed("❌ Hata", "Geçersiz argüman!", 0xFF0000))
-  try:
-    with open("token.txt", "r") as f:
-        token = f.read().strip()
-except:
-    token = os.getenv("DISCORD_TOKEN")
+# ================= BOT TOKENİM ==========
+bot.run(MTQ4ODg5MDA1OTY4Mjg3NzYxMg.GmjnS1.ObYP0YlscmGeEF03700fhq8e-XciKdJb03gKis)
 
-bot.run(token)
+
+
+
+check.Line 1217
