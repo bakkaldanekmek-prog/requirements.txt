@@ -503,13 +503,7 @@ async def istatistik(ctx, member: discord.Member = None):
     embed.add_field(name="💬 Mesaj Sayısı", value=mesaj, inline=True)
     embed.add_field(name="⚠️ Uyarı Sayısı", value=uyari, inline=True)
     await ctx.send(embed=embed)
-
-@bot.command()
-async def mesajtop(ctx):
-    top = sorted(data["mesaj_sayisi"].items(), key=lambda x: x[1], reverse=True)[:10]
-    txt = "\n".join([f"`{i+1}.` <@{uid}> → **{count}** mesaj" for i, (uid, count) in enumerate(top)])
-    await ctx.send(embed=create_embed("🏆 Mesaj Sıralaması", txt or "Henüz veri yok"
-
+    
 import discord
 from discord.ext import commands
 from discord.ui import Button, View
