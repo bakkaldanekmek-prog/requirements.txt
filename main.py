@@ -1217,5 +1217,5 @@ async def on_command_error(ctx, error):
         print(f"Hata: {error}")
 
 # ====================== BOT BAŞLAT ======================
-token = os.getenv("MTQ4ODg5MDA1OTY4Mjg3NzYxMg.GmjnS1.ObYP0YlscmGeEF03700fhq8e-XciKdJb03gKis") or "MTQ4ODg5MDA1OTY4Mjg3NzYxMg.GmjnS1.ObYP0YlscmGeEF03700fhq8e-XciKdJb03gKis"
-bot.run(MTQ4ODg5MDA1OTY4Mjg3NzYxMg.GmjnS1.ObYP0YlscmGeEF03700fhq8e-XciKdJb03gKis)
+token = os.getenv("") or "MTQ4ODg5MDA1OTY4Mjg3NzYxMg.GmjnS1.ObYP0YlscmGeEF03700fhq8e-XciKdJb03gKis"
+bot.run()
