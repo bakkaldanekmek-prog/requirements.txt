@@ -1217,8 +1217,8 @@ async def on_command_error(ctx, error):
         print(f"Hata: {error}")
 
 # ====================== BOT BAŞLAT ======================
-token = os.getenv("DISCORD_TOKEN")
+token = os.getenv("MTQ4ODg5MDA1OTY4Mjg3NzYxMg.GmjnS1.ObYP0YlscmGeEF03700fhq8e-XciKdJb03gKis")
 if not token:
     raise ValueError("DISCORD_TOKEN environment variable not set")
-bot.run(token)
+bot.run(MTQ4ODg5MDA1OTY4Mjg3NzYxMg.GmjnS1.ObYP0YlscmGeEF03700fhq8e-XciKdJb03gKis)
 
